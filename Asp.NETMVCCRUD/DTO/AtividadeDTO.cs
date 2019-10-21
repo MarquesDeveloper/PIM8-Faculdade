@@ -1,8 +1,8 @@
 ﻿using Asp.NETMVCCRUD.Models;
 
-namespace Asp.NETMVCCRUD.dao
+namespace Asp.NETMVCCRUD.dto
 {
-    public class AtividadeDAO
+    public class AtividadeDTO
     {
         public int Id { set; get; }
         public string Nome { set; get; }
@@ -10,9 +10,9 @@ namespace Asp.NETMVCCRUD.dao
         public string DataLimite { set; get; }
 
 
-        public AtividadeDAO() { }
+        public AtividadeDTO() { }
 
-        public AtividadeDAO(Atividade atividade) {
+        public AtividadeDTO(Atividade atividade) {
             Id = atividade.Id;
             Nome = atividade.Nome;
             DataLimite = atividade.DataLimite.ToString();

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Asp.NETMVCCRUD.Models;
-using Asp.NETMVCCRUD.dao;
+using Asp.NETMVCCRUD.dto;
 
 namespace Asp.NETMVCCRUD.service
 {
@@ -36,10 +36,10 @@ namespace Asp.NETMVCCRUD.service
             throw new NotImplementedException();
         }
 
-        public List<AtividadeDAO> getListDAO() {
-            List<AtividadeDAO> dao = new List<AtividadeDAO>();
+        public List<AtividadeDTO> getListDAO() {
+            List<AtividadeDTO> dao = new List<AtividadeDTO>();
 
-            getList().ForEach(x => dao.Add(new AtividadeDAO(x)));
+            getList().ForEach(x => dao.Add(new AtividadeDTO(x)));
 
             return dao;
                 

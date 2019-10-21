@@ -181,7 +181,7 @@
     </Compile>
     <Compile Include="Models\Atividade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DAO\AtividadeDAO.cs" />
+    <Compile Include="DTO\AtividadeDTO.cs" />
     <Compile Include="service\AtividadeService.cs" />
   </ItemGroup>
   <ItemGroup>
