@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PIM-Trabalho", "Asp.NETMVCCRUD\PIM-Trabalho.csproj", "{26296427-B22A-4EFB-AB6C-EEE33322B0DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26296427-B22A-4EFB-AB6C-EEE33322B0DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26296427-B22A-4EFB-AB6C-EEE33322B0DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26296427-B22A-4EFB-AB6C-EEE33322B0DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26296427-B22A-4EFB-AB6C-EEE33322B0DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4E1CA20-60BC-44B8-BB8D-AB897F9D6A7B}
+	EndGlobalSection
+EndGlobal
