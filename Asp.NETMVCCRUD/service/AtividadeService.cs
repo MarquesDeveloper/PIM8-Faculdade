@@ -4,44 +4,45 @@ using System.Linq;
 using System.Web;
 using Asp.NETMVCCRUD.Models;
 using Asp.NETMVCCRUD.dto;
+using Asp.NETMVCCRUD.dao;
 
 namespace Asp.NETMVCCRUD.service
 {
     public class AtividadeService
     {
-        private static List<Atividade> lista = new List<Atividade>();
+        AtividadeDAO dao = new AtividadeDAO();
 
         public List<Atividade> getList()
         {
-            return AtividadeService.lista;
+            return dao.findALL();
         }
 
         public void save(Atividade atividade)
         {
-            AtividadeService.lista.Add(atividade);
+            dao.save(atividade);   
         }
 
         public void update(Atividade atividade)
         {
-            
+            dao.update(atividade);
         }
 
         public void delete(int id)
         {
-          
+            dao.delete(id);
         }
 
         public Atividade find(int id)
         {
-            throw new NotImplementedException();
+           return  dao.find(id);
         }
 
-        public List<AtividadeDTO> getListDAO() {
-            List<AtividadeDTO> dao = new List<AtividadeDTO>();
+        public List<AtividadeDTO> getListDTO() {
+            List<AtividadeDTO> dto = new List<AtividadeDTO>();
 
-            getList().ForEach(x => dao.Add(new AtividadeDTO(x)));
+            getList().ForEach(x => dto.Add(new AtividadeDTO(x)));
 
-            return dao;
+            return dto;
                 
         }
     }

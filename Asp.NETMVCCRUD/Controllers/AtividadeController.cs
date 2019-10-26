@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using Asp.NETMVCCRUD.Models;
 using System.Data.Entity;
 using Asp.NETMVCCRUD.service;
-using Asp.NETMVCCRUD.dao;
+using Asp.NETMVCCRUD.dto;
 
 namespace Asp.NETMVCCRUD.Controllers
 {
@@ -28,7 +28,7 @@ namespace Asp.NETMVCCRUD.Controllers
 
             time.ToString();
 
-            List<AtividadeDAO> empList = service.getListDAO();
+            List<AtividadeDTO> empList = service.getListDTO();
             return Json(new { data = empList }, JsonRequestBehavior.AllowGet);
         }
 
