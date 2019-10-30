@@ -176,6 +176,8 @@
     <Compile Include="Controllers\AtividadeController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\PostagemController.cs" />
+    <Compile Include="DAL\AtividadeDAO.cs" />
+    <Compile Include="DAL\conexao\Conexao.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
